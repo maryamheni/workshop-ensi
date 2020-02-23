@@ -5,9 +5,6 @@ workflows:
   build_deploy:
     jobs:
       - build
-      - deploy_production:
-          requires:
-            - build_deploy
 
 jobs:
   build:
